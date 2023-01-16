@@ -1,0 +1,15 @@
+{
+    "Links":[                
+        { 
+            "url": "/men-list", 
+            "linkText": "Men", 
+            "hasSubMenu": true,
+            "subMenuLinks":[
+                { "url": "men/bottoms-list", "linkText": "Bottoms" },
+                { "url": "men/jackets-list", "linkText": "Jackets" },
+                { "url": "men/shirts-list", "linkText": "Shirts" }                
+            ]
+        },
+        { "url": "/headwear", "linkText": "Headwear", "hasSubMenu": false }
+    ]
+}
