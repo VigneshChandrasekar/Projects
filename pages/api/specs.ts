@@ -21,11 +21,12 @@ export default async function handler(
                     totalPages: fetchResponse.Meta?.TotalPages,
                     pageSize: fetchResponse.Meta?.PageSize
                 };
-                res.status(200).json(productSpecs);
+                console.log('ProductSpecs');
+                console.log(JSON.stringify(productSpecs));                
             }            
         }        
     }
-    res.status(401).json(productSpecs);
+    res.status(200).json(productSpecs);
 }
 
 function mergeSpecs(items: Spec<any, any>[]) : Spec<any, HSSpecOptionXp>[]{
@@ -50,7 +51,6 @@ function mergeSpecs(items: Spec<any, any>[]) : Spec<any, HSSpecOptionXp>[]{
                 specs.push(item);
             }
         });              
-    }
-    console.log(specs);
+    }    
     return specs;
 }
